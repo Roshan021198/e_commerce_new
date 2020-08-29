@@ -10,11 +10,14 @@
 
 <body>
     <div class="container">
+         <h1>Login</h1>
         <form method="POST" action="login">{% csrf_token %}
-            <div class="form-group">
+            <div class="form-row">
+            <div class="form-group col-md-6">
                 <label for="inputUsername">Username</label>
                 <input type="text" name="username" class="form-control" id="inputUsername">
             </div>
+        </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputPassword">Password</label>
